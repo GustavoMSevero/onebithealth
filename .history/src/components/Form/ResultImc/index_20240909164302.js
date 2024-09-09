@@ -13,7 +13,7 @@ export default function ResultImc(props) {
     return(
         <View style={styles.resultImc}>
             <View style={styles.boxShareButton}>
-                {props.ResultImc != null ? 
+                {props.ResultImc != null || isNaN(ResultImc) ? 
                 <TouchableOpacity
                     onPress={onShare}
                     style={styles.shared}

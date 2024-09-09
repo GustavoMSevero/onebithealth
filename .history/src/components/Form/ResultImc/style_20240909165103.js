@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
     contextImc: {
         flex: 1,
-        marginTop: 20,
+        marginTop: 40,
         paddingTop: 15,
         alignItems: "center",
         width: "100%",

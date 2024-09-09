@@ -22,7 +22,7 @@ export default function Form() {
 
     function imcCalculator() {
         let heightFormat = height.replace(",",".");
-        return setImc((weight / (heightFormat * heightFormat)).toFixed(2));
+        return setImc((weight / (height * height)).toFixed(2));
     }
 
     function verificationImc() {

@@ -4,6 +4,7 @@ const style = StyleSheet.create({
     formContext: {
         flex: 1,
         backgroundColor: "#FFFFFF",
+        marginTop: 30,
         alignItems: "center",
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
@@ -11,6 +12,7 @@ const style = StyleSheet.create({
     },
     form: {
         width: "100%",
+        paddingTop: 20,
     },
     formLabel: {
         color: "#000000",

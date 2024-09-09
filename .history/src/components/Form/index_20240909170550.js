@@ -55,7 +55,7 @@ export default function Form() {
                 <Text style={styles.errorMessage}>{errorMessage}</Text>
                 <TextInput
                     style={styles.input}
-                    onChangeText={setHeight}
+                    onChange={setHeight}
                     value={height}
                     placeholder="Ex. 1.75"
                     keyboardType="numeric"
@@ -64,7 +64,7 @@ export default function Form() {
                 <Text style={styles.errorMessage}>{errorMessage}</Text>
                 <TextInput
                     style={styles.input}
-                    onChangeText={setWeigth}
+                    onChange={setWeigth}
                     value={weight}
                     placeholder="Ex. 75.365"
                     keyboardType="numeric"

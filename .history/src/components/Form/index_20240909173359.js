@@ -21,8 +21,8 @@ export default function Form() {
     const [errorMessage, setErrorMessage] = useState(null);
 
     function imcCalculator() {
-        let heightFormat = height.replace(",",".");
-        return setImc((weight / (heightFormat * heightFormat)).toFixed(2));
+        // console.log(weight)
+        return setImc((weight / (height * height)).toFixed(2));
     }
 
     function verificationImc() {
@@ -55,7 +55,7 @@ export default function Form() {
                 <Text style={styles.errorMessage}>{errorMessage}</Text>
                 <TextInput
                     style={styles.input}
-                    onChangeText={setHeight}
+                    onChange={setHeight}
                     value={height}
                     placeholder="Ex. 1.75"
                     keyboardType="numeric"
@@ -64,7 +64,7 @@ export default function Form() {
                 <Text style={styles.errorMessage}>{errorMessage}</Text>
                 <TextInput
                     style={styles.input}
-                    onChangeText={setWeigth}
+                    onChange={setWeigth}
                     value={weight}
                     placeholder="Ex. 75.365"
                     keyboardType="numeric"
