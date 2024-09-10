@@ -103,16 +103,15 @@ export default function Form() {
                 data={imcList.reverse()}
                 renderItem={({item}) => {
                     return(
-                        <Text style={styles.resultImcItem}>
-                            <Text style={styles.textResultItemList}>Resultado IMC =</Text>
-                            {item.imc}
-                        </Text>
+                        <Text>Resultado IMC = {item.imc}</Text>
                     )
                 }}
                 keyExtractor={(item) => {
                     item.id
                 }}
-            />
+            >
+
+            </FlatList>
         </View>
     );
 }

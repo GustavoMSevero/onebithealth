@@ -61,8 +61,7 @@ const style = StyleSheet.create({
         paddingRight: 20,
     },
     textResultItemList: {
-        fontSize: 16,
-        color: "red",
+        fontSize: 14,
     }
 });
 

@@ -37,7 +37,6 @@ export default function Form() {
     }
 
     function validationImc() {
-        console.log(imcList)
         if(weight != null && height != null) {
             imcCalculator()
             setHeight(null)
@@ -100,19 +99,9 @@ export default function Form() {
             }
             <FlatList
                 style={styles.listImcs}
-                data={imcList.reverse()}
-                renderItem={({item}) => {
-                    return(
-                        <Text style={styles.resultImcItem}>
-                            <Text style={styles.textResultItemList}>Resultado IMC =</Text>
-                            {item.imc}
-                        </Text>
-                    )
-                }}
-                keyExtractor={(item) => {
-                    item.id
-                }}
-            />
+            >
+
+            </FlatList>
         </View>
     );
 }
